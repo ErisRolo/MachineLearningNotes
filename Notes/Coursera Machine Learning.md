@@ -318,7 +318,7 @@
 
 **1.6 小结**：训练神经网络
 
-![训练神经网络的步骤](C:\Users\guohouxiao\Desktop\ML Note\训练神经网络的步骤.png)
+![训练神经网络的步骤](https://github.com/ErisRolo/MachineLearningNotes/blob/master/Images/训练神经网络的步骤.png)
 
 神经网络部分建议参考3Blue1Brown的视频讲解
 
