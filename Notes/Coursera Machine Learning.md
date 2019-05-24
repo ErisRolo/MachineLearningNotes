@@ -34,7 +34,7 @@
 
 ​                          使代价函数的最小的模型参数确定的假设函数的建模误差最小
 
-![CostFunction](C:\Users\guohouxiao\Desktop\ML Note\CostFunction.png)
+![代价函数](https://github.com/ErisRolo/MachineLearningNotes/blob/master/Images/代价函数.png)
 
 **2.3 梯度下降**：用来求函数最小值的算法，其思想为：开始随机选择一个参数的组合，计算代价函数
 
@@ -44,7 +44,7 @@
 
 ​                         批量梯度下降（batch gradient descent）算法的公式如下
 
-![Gradient Descent](C:\Users\guohouxiao\Desktop\ML Note\Gradient Descent.png)
+![梯度下降](https://github.com/ErisRolo/MachineLearningNotes/blob/master/Images/梯度下降.png)
 
 ​                         其中α为学习率，决定能让代价函数下降程度最大的方向向下迈出的步子有多大
 
@@ -58,15 +58,15 @@
 
 ​	                                     ① 梯度下降算法和线性回归算法比较：
 
-![GradientDescentForLinearRegression](C:\Users\guohouxiao\Desktop\ML Note\GradientDescentForLinearRegression.png)
+![梯度下降的线性回归](https://github.com/ErisRolo/MachineLearningNotes/blob/master/Images/梯度下降的线性回归.png)
 
 ​                                             ② 对线性回归问题运用梯度下降算法，求代价函数的导数如下：
 
-![Derivation](C:\Users\guohouxiao\Desktop\ML Note\Derivation.png)
+![求导](https://github.com/ErisRolo/MachineLearningNotes/blob/master/Images/求导.png)
 
 ​                                           ③ 算法改写为：
 
-![Repeat](C:\Users\guohouxiao\Desktop\ML Note\Repeat.png)
+![改写](https://github.com/ErisRolo/MachineLearningNotes/blob/master/Images/改写.png)
 
 ​                                            之所以叫“批量”梯度下降，是因为梯度下降的每一步中都用到了所有的训练样本，
 
@@ -84,35 +84,35 @@
 
 **1.1 多维特征**：在单变量回归模型中引入多个变量（增加多个特征），假设函数变为：
 
-![multivariable hypothesis function ](C:\Users\guohouxiao\Desktop\ML Note\multivariable hypothesis function .png)
+![多元假设函数](https://github.com/ErisRolo/MachineLearningNotes/blob/master/Images/多元假设函数.png)
 
 ​                          引入x0=1，公式化简为：
 
-![add x0](C:\Users\guohouxiao\Desktop\ML Note\add x0.png)
+![引入x0](https://github.com/ErisRolo/MachineLearningNotes/blob/master/Images/引入x0.png)
 
 ​                         模型参数为n+1维向量，训练实例也是n+1维向量，特征矩阵X的维度为m*(n+1)，公式化简为：
 
-![simple multivariable hypothesis function ](C:\Users\guohouxiao\Desktop\ML Note\simple multivariable hypothesis function .png)
+![简化多元假设函数](https://github.com/ErisRolo/MachineLearningNotes/blob/master/Images/简化多元假设函数.png)
 
 **1.2 多变量梯度下降**：与单变量线性回归类似，构造代价函数为所有建模误差的平方和，如下：
 
-![multivariable CostFunction](C:\Users\guohouxiao\Desktop\ML Note\multivariable CostFunction.png)
+![多变量代价函数](https://github.com/ErisRolo/MachineLearningNotes/blob/master/Images/多变量代价函数.png)
 
 ​                                     与单变量线性回归相同，要找出使代价函数最小的一系列的参数，应用梯度下降算法如下：
 
-![multivariable Gradient Descent](C:\Users\guohouxiao\Desktop\ML Note\multivariable Gradient Descent.png)
+![多变量梯度下降](https://github.com/ErisRolo/MachineLearningNotes/blob/master/Images/多变量梯度下降.png)
 
 ​                                     求导后得：
 
-![multivariable Repeat](C:\Users\guohouxiao\Desktop\ML Note\multivariable Repeat.png)
+![多变量梯度下降化简](https://github.com/ErisRolo/MachineLearningNotes/blob/master/Images/多变量梯度下降化简.png)
 
 ​                                     即特征数n≥1时，如下：
 
-![multivariable GradientDescentForLinearRegression](C:\Users\guohouxiao\Desktop\ML Note\multivariable GradientDescentForLinearRegression.png)
+![多变量梯度下降的线性回归](https://github.com/ErisRolo/MachineLearningNotes/blob/master/Images/多变量梯度下降的线性回归.png)
 
 **1.3 特征缩放**：使收敛所需的迭代次数更少，梯度下降的速度更快，常用的方法是均值归一化，即
 
-​                          令![mean normalization](C:\Users\guohouxiao\Desktop\ML Note\mean normalization.png)
+​                          令![均值归一化](https://github.com/ErisRolo/MachineLearningNotes/blob/master/Images/均值归一化.png)
 
 ​                           Sn有时直接用最大值减最小值代替，即归一化特征方程
 
@@ -128,7 +128,7 @@
 
 **1.6 正规方程**：通过求偏导令导数值为0求解使代价函数最小的参数，用向量表示即为：
 
-![Normal Equation](C:\Users\guohouxiao\Desktop\ML Note\Normal Equation.png)
+![正规方程](https://github.com/ErisRolo/MachineLearningNotes/blob/master/Images/正规方程.png)
 
 ​                          在数值计算中，若矩阵不可逆，用伪逆(pinv)来计算，一般都是可逆的
 
@@ -136,7 +136,7 @@
 
 梯度下降与正规方程优劣比较如下：
 
-![difference](C:\Users\guohouxiao\Desktop\ML Note\difference.png)
+![梯度下降和正规方程的比较](https://github.com/ErisRolo/MachineLearningNotes/blob/master/Images/梯度下降和正规方程的比较.png)
 
 ### 2.Octave/Matlab Tutorial
 
@@ -150,11 +150,11 @@
 
 **1.1 假设函数**：需要用到Sigmoid函数，公式如下：
 
-![Logistic Function](C:\Users\guohouxiao\Desktop\ML Note\Logistic Function.png)
+![逻辑函数](https://github.com/ErisRolo/MachineLearningNotes/blob/master/Images/逻辑函数.png)
 
 ​                         图像如下：
 
-![logistic function pic](C:\Users\guohouxiao\Desktop\ML Note\logistic function pic.png)
+![逻辑函数图像](C:\Users\guohouxiao\Desktop\ML Note\逻辑函数图像.png)
 
 ​                         当h(x)≥0.5时，预测y=1；当h(x)＜0.5时，预测y=0
 
@@ -162,27 +162,27 @@
 
 **1.2 决策边界**：即模型分类的分界线，要注意决策边界不是训练集的属性，而是假设本身及其参数的属性，如下：
 
-![决策边界](C:\Users\guohouxiao\Desktop\ML Note\决策边界.png)
+![决策边界](https://github.com/ErisRolo/MachineLearningNotes/blob/master/Images/决策边界.png)
 
 **1.3 代价函数**：不能用线性回归的代价函数，因为最后会得到非凸函数，逻辑回归的代价函数如下：
 
-![逻辑回归代价函数](C:\Users\guohouxiao\Desktop\ML Note\逻辑回归代价函数.png)
+![逻辑回归代价函数](https://github.com/ErisRolo/MachineLearningNotes/blob/master/Images/逻辑回归代价函数.png)
 
 ​                          两个对数函数的图像如下：
 
-![对数函数图像](C:\Users\guohouxiao\Desktop\ML Note\对数函数图像.png)
+![对数函数图像](https://github.com/ErisRolo/MachineLearningNotes/blob/master/Images/对数函数图像.png)
 
 ​                          简化版本如下：
 
-![逻辑回归代价函数的简化](C:\Users\guohouxiao\Desktop\ML Note\逻辑回归代价函数的简化.png)
+![逻辑回归代价函数的简化](https://github.com/ErisRolo/MachineLearningNotes/blob/master/Images/逻辑回归代价函数的简化.png)
 
 ​                          向量化表示如下：
 
-![逻辑回归代价函数向量化](C:\Users\guohouxiao\Desktop\ML Note\逻辑回归代价函数向量化.png)
+![逻辑回归代价函数向量化](https://github.com/ErisRolo/MachineLearningNotes/blob/master/Images/逻辑回归代价函数向量化.png)
 
 ​                          最小化代价函数的方法仍然是梯度下降法，如下：
 
-![逻辑回归的梯度下降](C:\Users\guohouxiao\Desktop\ML Note\逻辑回归的梯度下降.png)
+![逻辑回归的梯度下降](https://github.com/ErisRolo/MachineLearningNotes/blob/master/Images/逻辑回归的梯度下降.png)
 
 **1.4 高级优化**：比梯度下降更高级的计算代价函数和偏导数项的算法
 
@@ -194,7 +194,7 @@
 
 **1.5 多元分类**：可分成n个二元分类问题，如下图所示：
 
-![多元分类](C:\Users\guohouxiao\Desktop\ML Note\多元分类.png)
+![多元分类](https://github.com/ErisRolo/MachineLearningNotes/blob/master/Images/多元分类.png)
 
 ### 2.Regularization
 
@@ -208,31 +208,31 @@
 
 **2.2 正则化代价函数**：引入正则化参数λ，惩罚部分特征，如下：
 
-![正则化代价函数](C:\Users\guohouxiao\Desktop\ML Note\正则化代价函数.png)
+![正则化代价函数](https://github.com/ErisRolo/MachineLearningNotes/blob/master/Images/正则化代价函数.png)
 
 ​                                     模型对比如下：
 
-![模型对比](C:\Users\guohouxiao\Desktop\ML Note\模型对比.png)
+![模型对比](https://github.com/ErisRolo/MachineLearningNotes/blob/master/Images/模型对比.png)
 
 **2.3 正则化线性回归**：梯度下降法如下：
 
-![正则化线性梯度下降](C:\Users\guohouxiao\Desktop\ML Note\正则化线性梯度下降.png)
+![正则化线性梯度下降](https://github.com/ErisRolo/MachineLearningNotes/blob/master/Images/正则化线性梯度下降.png)
 
 ​                                     调整后如下：
 
-![正则化线性梯度下降调整](C:\Users\guohouxiao\Desktop\ML Note\正则化线性梯度下降调整.png)
+![正则化线性梯度下降调整](https://github.com/ErisRolo/MachineLearningNotes/blob/master/Images/正则化线性梯度下降调整.png)
 
 ​                                     正规方程法如下：
 
-![正则化正规方程](C:\Users\guohouxiao\Desktop\ML Note\正则化正规方程.png)
+![正则化正规方程](https://github.com/ErisRolo/MachineLearningNotes/blob/master/Images/正则化正规方程.png)
 
 **2.4 正则化逻辑回归**：注意假设函数与线性回归不同，新的代价函数如下：
 
-![正则化逻辑回归代价函数](C:\Users\guohouxiao\Desktop\ML Note\正则化逻辑回归代价函数.png)
+![正则化逻辑回归代价函数](https://github.com/ErisRolo/MachineLearningNotes/blob/master/Images/正则化逻辑回归代价函数.png)
 
 ​                                     梯度下降如下：
 
-![正则化逻辑梯度下降](C:\Users\guohouxiao\Desktop\ML Note\正则化逻辑梯度下降.png)
+![正则化逻辑梯度下降](https://github.com/ErisRolo/MachineLearningNotes/blob/master/Images/正则化逻辑梯度下降.png)
 
 ​                                     注意θ0不参与正则化
 
@@ -250,9 +250,7 @@
 
 ​                                 模型中的参数又称为权重
 
-​                               ![神经网络模型](C:\Users\guohouxiao\Desktop\ML Note\神经网络模型.jpg)
-
-
+​                               ![神经网络模型](https://github.com/ErisRolo/MachineLearningNotes/blob/master/Images/神经网络模型.jpg)
 
 ​                                 如上图所示，第一层为输入层，最后一层为输出层，中间的为隐含层
 
@@ -260,7 +258,7 @@
 
 ​                                 激活单元和输出表达如下：
 
-![神经网络模型表达](C:\Users\guohouxiao\Desktop\ML Note\神经网络模型表达.png)
+![神经网络模型表达](https://github.com/ErisRolo/MachineLearningNotes/blob/master/Images/神经网络模型表达.png)
 
 ​                                 每一个a都是由上一层所有的x和每一个x所对应的决定的
 
@@ -268,7 +266,7 @@
 
 **1.2 前向传播算法的向量化**：
 
-![前向传播算法的向量化](C:\Users\guohouxiao\Desktop\ML Note\前向传播算法的向量化.png)
+![前向传播算法的向量化](https://github.com/ErisRolo/MachineLearningNotes/blob/master/Images/前向传播算法的向量化.png)
 
 **1.3 和逻辑回归的比较**：其实神经网络就像是logistic regression
 
@@ -286,13 +284,13 @@
 
 **1.1 代价函数**：在神经网络中可以有多输出量，代价函数比逻辑回归复杂，如下：
 
-![神经网络的代价函数](C:\Users\guohouxiao\Desktop\ML Note\神经网络的代价函数.png)
+![神经网络的代价函数](https://github.com/ErisRolo/MachineLearningNotes/blob/master/Images/神经网络的代价函数.png)
 
 **1.2 反向传播算法**：用于计算代价函数的偏导数
 
 ​                                 首先计算最后一层的误差，然后逐层反向求出各层误差，直到倒数第二层，如下：
 
-![反向传播算法](C:\Users\guohouxiao\Desktop\ML Note\反向传播算法.jpg)
+![反向传播算法](https://github.com/ErisRolo/MachineLearningNotes/blob/master/Images/反向传播算法.png)
 
 ​                                 即首先用正向传播方法计算出每一层的激活单元
 
@@ -302,11 +300,11 @@
 
 **1.3 展开参数**：把参数从矩阵展开成向量的方法，如下：
 
-![展开参数](C:\Users\guohouxiao\Desktop\ML Note\展开参数.png)
+![展开参数](https://github.com/ErisRolo/MachineLearningNotes/blob/master/Images/展开参数.png)
 
 **1.4 梯度检测**：为了避免神经网络在使用梯度下降算法时可能会产生的一些不易察觉的错误，获得最优解，如下：
 
-![梯度检测](C:\Users\guohouxiao\Desktop\ML Note\梯度检测.png)
+![梯度检测](https://github.com/ErisRolo/MachineLearningNotes/blob/master/Images/梯度检测.png)
 
 ​                         然后和反向传播算法计算的偏导值进行比较即可
 
