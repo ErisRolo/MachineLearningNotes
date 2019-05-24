@@ -1,5 +1,6 @@
 # MachineLearningNotes
-学习机器学习时的部分笔记
+
+学习ML时的部分笔记
 
 现已完成：
 
