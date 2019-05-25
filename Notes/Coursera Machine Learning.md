@@ -1,7 +1,3 @@
----
-
----
-
 # Coursera Machine Learning by AndrewNg
 
 
