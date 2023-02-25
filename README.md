@@ -2,7 +2,7 @@
 
 学习ML时的部分笔记
 
-Machine Learning by Andrew Ng进度：
+Machine Learning by Andrew Ng进度：明天加完班，后天开始爆肝冲冲冲
 
 监督学习（单变量线性回归）
 
